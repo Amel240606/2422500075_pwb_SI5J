@@ -14,8 +14,7 @@
         <img src="<?= base_url('assets/'); ?>dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <!-- Nama diambil dinamis dari session -->
-        <a href="#" class="d-block"><?= $this->session->userdata('full_name'); ?></a>
+        <a href="#" class="d-block">Amelia</a>
       </div>
     </div>
 
@@ -35,7 +34,7 @@
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
-        <!-- Menu Master (Sesuai Modul Pertemuan 4) -->
+        <!-- Menu Master -->
         <li class="nav-item menu-open">
           <a href="#" class="nav-link active">
             <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -46,7 +45,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?= base_url('admin/kategori'); ?>" class="nav-link active">
+              <a href="<?= base_url('admin/kategori'); ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Kategori</p>
               </a>
@@ -55,6 +54,15 @@
               <a href="<?= base_url('admin/produk'); ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Produk</p>
+              </a>
+            </li>
+            <!-- SUBMENU EKSPEDISI BARU DITAMBAHKAN -->
+           <li class="nav-item">
+  <a href="<?= base_url('ekspedisi'); ?>" class="nav-link">
+    <i class="far fa-circle nav-icon"></i>
+    <p>Ekspedisi</p>
+  </a>
+</li>
               </a>
             </li>
           </ul>
